@@ -1,0 +1,52 @@
+= Aufgabenblatt 1 =
+
+Machen Sie sich mit der Installation von Python und NLTK, sowie dem Starten des Interpreters (IDLE) vertraut:
+
+* Installation (Python + NLTK): http://nltk.org/install.html
+* Einführung Python Interpreter, NLTK: http://nltk.googlecode.com/svn/trunk/doc/book/ch01.html
+* Grundlagen Python: http://nltk.googlecode.com/svn/trunk/doc/book/ch04.html
+* Übersicht: Python Commands
+
+ 
+Dieses Aufgabenblatt stellt eine Einführung in Python dar, deshalb sollen zu seiner Lösung noch keine NLTK-Funktionen verwendet werden.
+
+ 
+
+== Aufgabe 1.1 - Welcome Python ==
+
+a. Definieren Sie eine Python-Funktion mysucc, die als Eingabe eine Zahl erwartet und den Nachfolger dieser Zahl als Rückgabewert liefert.
+   Bspw. soll mysucc(1) als Ergebnis 2 liefern.
+b. Definieren Sie eine Python-Funktion mymax, die als Eingabe zwei Zahlen erwartet und die Größte dieser Zahlen als Rückgabewert liefert.
+   Bspw. soll mymax(4, 2) als Ergebnis 4 liefern.
+
+
+== Aufgabe 1.2 - countWords ==
+
+Implementieren Sie eine Funktion countWords, die einen als String vorliegenden Satz (ohne Interpunktionszeichen) entgegennimmt, diesen Satz in seine Wörter zerlegt, diese zählt und die ermittelte Wortzahl zurückgibt.
+
+Erweitern Sie diese Funktion so, dass sie zusätzlich die Häufigkeit der einzelnen (verschiedenen) Wörter zeilenweise in alphabetischer Reihenfolge auf der Konsole ausgibt.
+
+
+== Aufgabe 1.3 - orderWords ==
+
+Implementieren Sie eine Funktion orderWords, die eine beliebige Liste von Wörtern entgegennimmt und als Ergebnis eine Wortliste (ohne Duplikate) zurückgibt, die absteigend nach der Häufigkeit der einzelnen Wörter sortiert ist. Bei übereinstimmender Häufigkeit zweier Wörter soll auf deren alphabetische Reihenfolge zurückgegriffen werden. Bspw. sollte orderWords("das ist ein text ein einfacher text".split()) als Ergbnis ['ein', 'text', 'das', 'einfacher', 'ist'] zurückgeben.
+
+
+== Aufgabe 1.4 - shorten ==
+
+Implementieren Sie eine Funktion shorten, die einen als String vorliegenden Satz und eine Zahl n entgegennimmt und als Ergebnis eine Kopie des übergebenen Strings zurückgibt, bei der die n häufigsten Buchstaben entfernt wurden. Bei übereinstimmender Häufigkeit zweier Buchstaben soll auf deren alphabetische Reihenfolge zurückgegriffen werden. Bspw. sollte shorten("das ist ein text ein einfacher text", 3) als Ergbnis 'das s n x n nfachr x' zurückgeben.
+
+Hinweis: Die Memberfunktion isalpha() könnte nützlich sein.
+
+
+== Aufgabe 1.5 - Morpheme (de) ==
+
+Nehmen Sie einen deutschsprachigen Text Ihrer Wahl (mit mindestens 50 Wörtern) und zerlegen Sie alle Wörter in ihre jeweiligen Morpheme.
+
+Listen Sie auf:
+
+* Welches sind lexikalische, welches grammatische Morpheme?
+* Welche Morpheme sind frei, welche gebunden?
+
+Hinweis: Morphologie - Online Demo (http://www.tagh.de) oder Canoonet (http://www.canoo.net/) könnte zur Verifikation Ihrer Zerlegung nützlich sein.
+
