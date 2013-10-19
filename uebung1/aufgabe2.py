@@ -1,6 +1,6 @@
 def countWords(sentence):
     words = sentence.split()
-    
+
     counted_words = count_each_word(words)
     for k, v in counted_words.items():
         print('{}: {}'.format(k, v))

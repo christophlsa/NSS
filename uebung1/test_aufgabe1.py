@@ -14,7 +14,7 @@ class TestAufgabe1(unittest.TestCase):
 
     def test_max_positive(self):
         self.assertEqual(mymax(42, 23), 42)
-        self.assertEqual(mymax(23, 42), 42)   
+        self.assertEqual(mymax(23, 42), 42)
 
     def test_max_negative(self):
         self.assertEqual(mymax(-23, -42), -23)

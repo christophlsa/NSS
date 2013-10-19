@@ -33,7 +33,7 @@ class TestAufgabe1(unittest.TestCase):
             'two': 2
         }
         self.assertEqual(count_each_word(wordlist), asserted)
-    
+
     def test_count_wordlist_simple2(self):
         wordlist = [
             'five', 'aaaa', 'two', 'five', 'one', 'five', 'five', 'z',
