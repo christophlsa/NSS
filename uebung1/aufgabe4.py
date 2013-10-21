@@ -1,5 +1,4 @@
 from collections import Counter
-from aufgabe3 import inverse_dict, sort_dict_with_lists
 
 def shorten(sentence, n):
     chars = most_common_chars(sentence)[:n]
@@ -14,3 +13,13 @@ def most_common_chars(sentence):
     char_map = sort_dict_with_lists(inverse_dict(dict(cnt)))
 
     return [c for k in reversed(list(char_map.keys())) for c in char_map[k]]
+
+def inverse_dict(map):
+    inv_map = {}
+    for k, v in map.items():
+        inv_map[v] = inv_map.get(v, [])
+        inv_map[v].append(k)
+    return inv_map
+
+def sort_dict_with_lists(unsorted_dict):
+    return {k: sorted(v) for k, v in unsorted_dict.items()}
