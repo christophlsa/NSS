@@ -1,0 +1,20 @@
+erste Schritte:
+- Pakete installiert
+- python in der Console gestartet
+- Beispiele aus der Vorlesung getestet
+- geschaut, was man mit nltk so machen kann
+- nicht spezielles festgestellt
+
+>>> import nltk
+>>> from nltk.corpus import gutenberg
+>>> emmaT = nltk.Text(gutenberg.words('austen-emma.txt'))
+
+>>> emmaT.similar('sad')
+Building word-context index...
+bad complete great happy much odd strong acceptable agreeable
+comfortably completely composedly could deficient delightful different
+disagreeable distant doing dreadful
+
+>>> emmaT.similar('happy')
+much well good long ready so superior that agreeable before in little
+sure all as clever cold glad kind likely

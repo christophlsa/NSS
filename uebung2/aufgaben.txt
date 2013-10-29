@@ -25,7 +25,7 @@ Installieren Sie im Anschluss (bspw. mit Hilfe des interaktiven Installers) die 
 Alternative: Beantragen Sie bitte einen Account und Zugang zum Rechnerlabor G29-033, dort kann Python + NLTK + NLTK-Corpus verwendet werden. (Ansprechpartner Account / Laborzugang ist Frau Pape G29-023, eine kurze Einweisung erhalten Sie bei Bedarf von Herrn Bauer G29-014).
 
 * Experimentieren Sie mit NLTK und berichten Sie über Ihre ersten Schritte. Beispiele finden sich in den Vorlesungsfolien "Einführung in NLTK" und im ersten Kapitel  'Natural Language Processing with Python' (http://nltk.googlecode.com/svn/trunk/doc/book/ch01.html) .
-* Die Funktion similar kann verwendet werden, um Wörter zu finden, die in ähnlichen Kontexten auftreten wie ein bestimmtes Suchwort. Vergleichen und Bewerten Sie die Ergebnisse, die diese Funktion für zwei Antonyme (Antonyme sind in der Sprachwissenschaft Wörter mit gegensätzlicher Bedeutung) wie bspw. "happy" und "sad" liefert. Verwenden Sie dafür den Gutenberg-Corpus (siehe Vorlesungsfolien) 
+* Die Funktion similar kann verwendet werden, um Wörter zu finden, die in ähnlichen Kontexten auftreten wie ein bestimmtes Suchwort. Vergleichen und Bewerten Sie die Ergebnisse, die diese Funktion für zwei Antonyme (Antonyme sind in der Sprachwissenschaft Wörter mit gegensätzlicher Bedeutung) wie bspw. "happy" und "sad" liefert. Verwenden Sie dafür den Gutenberg-Corpus (siehe Vorlesungsfolien)
 
 
 == Aufgabe 2.4 - POS-tagger ==

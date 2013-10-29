@@ -1,0 +1,30 @@
+bow: Bogen, Wölbung, Bügel
+bear: Bär, ausüben
+close: schließen, nah
+wind: Wind, wickeln
+
+https://en.wikipedia.org/wiki/List_of_English_homographs
+
+
+>>> text = nltk.word_tokenize("Gold is heavier than lead.")
+>>> nltk.pos_tag(text)
+[('Gold', 'NNP'),
+ ('is', 'VBZ'),
+ ('heavier', 'JJR'),
+ ('than', 'IN'),
+ ('lead', 'NN'),
+ ('.', '.')]
+
+>>> text2 = nltk.word_tokenize("The mother duck will lead her ducklings around.")
+>>> nltk.pos_tag(text2)
+[('The', 'DT'),
+ ('mother', 'NN'),
+ ('duck', 'NN'),
+ ('will', 'MD'),
+ ('lead', 'VB'),
+ ('her', 'PRP'),
+ ('ducklings', 'NNS'),
+ ('around', 'IN'),
+ ('.', '.')]
+
+-> Richtig erkannt. Aus dem Kontext bzw Satzaufbau.
