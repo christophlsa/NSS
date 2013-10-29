@@ -1,0 +1,19 @@
+But when the NSA director and other spy chiefs appear at a  House Intelligence Committee
+
+IN  RB   AT  NP  NN       CC  JJ    NN  NNS    VB     IN AT NP    NP           NP
+
+hearing on Tuesday it  will be against a  backdrop of angry European allies accusing the
+
+VBG     IN NN      PPS VB   VB IN      AT NN       IN JJ    JJ       NN     VBG      AT
+
+United States of spying on their leaders and citizens.
+
+JJ     NNS     IN VBG    IN PP$   NNS    CC  NNS     .
+
+The most prominent target appears to have been German Chancellor Angela Merkel,
+
+AT  RB   JJ        NN     VBZ     IN VB   VBD  JJ     NN         NN     NN    ,
+
+whose mobile phone was allegedly tapped by the NSA.
+
+WP$   JJ     NN    VBD RB        VBD    IN AT  NP .

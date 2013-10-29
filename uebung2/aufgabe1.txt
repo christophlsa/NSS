@@ -1,0 +1,63 @@
+Auffälligkeiten:
+- Fachbegriffe/-sätze werden oft falsch übersetzt
+- Eigennamen werden manchmal übersetzt (was nicht sollte)
+- falsche Übertragung, wenn es mehrere Entsprechungen gibt (Synonyme)
+- einfache Sätze sind oft ok
+- Rückübersetzungen sind oft sehr merkwürdig
+- Englisch -> Deutsch oft falsch, andersrum besser
+
+
+Unter dem Strich verdiente das Institut nur noch 51 Millionen Euro. Im Vorjahr
+waren es 754 Millionen gewesen, wie die
+Bank mitteilte.
+
+->
+
+The bottom line, the Institute earned only 51 million euros. In the previous year
+there had been 754 million, as the bank said.
+
+->
+
+Unter dem Strich verdiente das Institut nur 51 Millionen Euro. Im Vorjahr hatte
+es 754 Mio., da die Bank sagte.
+
+---
+
+Die Affäre habe ein Bewusstsein dafür geschaffen, dass sich weltweit etwas
+verändern müsse, wenn es um Daten gehe.
+
+->
+
+The affair has created an awareness that something had to change the world, when
+it comes to data.
+
+->
+
+Die Affäre hat ein Bewusstsein geschaffen, dass etwas, um die Welt zu
+verändern musste, wenn es um Daten geht.
+
+---
+
+The chair of the Senate intelligence committee, who has been a loyal defender of
+the National Security Agency, dramatically broke ranks on Monday, saying she was
+"totally opposed" to the US spying on allies and demanding a total review of all
+surveillance programs.
+
+->
+
+Der Vorsitzende des Senats Intelligence Committee, der ein treuer Verteidiger
+der National Security Agency hat, brach dramatisch Reihen am Montag, sagte, sie
+sei "völlig entgegengesetzt" zu der US-Spionage auf Verbündete und fordern eine
+vollständige Überarbeitung aller Überwachungsprogramme.
+
+---
+
+Motorola has revealed its latest effort to shake up the smartphone market:
+Project Ara, described by the Google subsidiary as "a free, open hardware
+platform for creating highly modular smartphones".
+
+->
+
+Projekt Ara, von der Google-Tochter als "eine freie, offene Hardware-Plattform
+für die Schaffung hoch modular Smartphones" beschrieben: Motorola hat seine
+neueste Versuch, schütteln den Smartphone-Markt offenbart.
