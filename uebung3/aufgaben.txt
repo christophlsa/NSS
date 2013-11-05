@@ -1,0 +1,45 @@
+= Aufgabenblatt 3 =
+
+== Aufgabe 3.1 - Wortklassen-STTS ==
+
+Nehmen Sie einen deutschsprachigen Text Ihrer Wahl (mit mindestens 50 Wörtern) und bestimmen Sie zu jedem vorkommenden Wort die Wortklasse. Verwenden Sie dazu die Tags des Stuttgart-Tübingen Tagsets (STTS; http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-table.html).
+
+* Gibt es in Ihrem Beispieltext Wörter, die ohne Berücksichtigung des Kontextes zu unterschiedlichen Wortklassen gehören können?
+
+* Gibt es Kombinationen aufeinanderfolgender Wortklassen, die wiederholt auftreten?
+
+
+== Aufgabe 3.2 - Wortklassen-STTS II ==
+
+Konstruieren sie einen sinnvollen deutschsprachigen Text (mit mind. 50 Wörtern) so, dass möglichst viele der im STTS verwendeten Wortklassen darin mit mind. einem Exemplar vertreten sind. Reichen Sie Ihren Text einerseits als Fließtext, andererseits versehen mit den jeweiligen STTS-Tags ein.
+
+
+== Aufgabe 3.3 - tag_ratio ==
+
+Definieren Sie eine Python-Funktion tag_ratio, die einem getaggten Text und einem Tag den Prozentanteil der mit diesem Tag markierten Token des Texts zuordnet. Testen Sie ihre Funktion mit geeigneten Beispielen.
+
+Der Aufruf tag_ratio(brown.tagged_words(categories='news', simplify_tags=True), 'N') sollte bspw. 22.103546353203253 liefern.
+
+
+== Aufgabe 3.4 - Brown Corpus Categories ==
+
+Mit brown.categories() erhalten Sie die im Brown-Korpus vorhandenen Kategorien.
+
+* Wählen Sie drei davon aus und bestimmen Sie jeweils die Häufigkeitsverteilung für die vereinfachten Tagsets (cf. Aufruf in Aufgabe 3.3).
+
+* Plotten Sie diese mit plot() (auch in kumulierter Form) und vergleichen Sie die Ergebnisse für die unterschiedlichen Kategorien.
+
+* Welcher Prozentsatz der Wörter in den gewählten Kategorien wird jeweils durch die fünf bzw. zehn häufigsten Tags abgedeckt?
+
+== Aufgabe 3.5 - Python-verb ==
+
+# Definieren Sie eine Python-Funktion rootform, die als Eingabe einen String erwartet, der den Infinitiv eines deutschen Verbs darstellt. Das Ergebnis soll dann der Stamm dieses Verbs sein.
+
+    Beispiel: Für 'lieben' als Eingabe also 'lieb' als Ergebnis.
+
+# Definieren Sie eine Python-Funktion inflect, die als Eingabe einen String erwartet, der den Stamm eines deutschen Verbs darstellt. Ausgabe sollen die flektierten Formen dieses Verbs im Präsens sein.
+
+    Beispiel: Für 'lieb' als Eingabe die Ausgabe
+    'ich liebe, du liebst, er/sie/es liebt, wir lieben, ihr liebt, sie lieben'
+
+# Gibt es Beispiele, bei denen Ihre Lösungen zu a) und b) versagen?
