@@ -1,0 +1,46 @@
+a)
+
+S
+NP VP
+N2 VP
+N  VP
+N  V  NP
+N  V  Det N2
+N  V  Det Adj N2
+N  V  Det Adj Adj N2
+N  V  Det Adj Adj N
+
+John eats the beautiful red apple.
+
+N   -> John
+V   -> eats
+Det -> the
+Adj -> beautiful
+Adj -> red
+N   -> apple
+
+
+S
+NP VP
+N2 VP
+N  VP
+N  V  NP
+N  V  Det N2
+N  V  Det Adj N2
+N  V  Det Adj N
+
+He loves a smart woman.
+
+N   -> He
+V   -> loves
+Det -> a
+Adj -> smart
+N   -> woman
+
+b)
+
+John loves
+A woman eats
+John loves a beautiful woman
+Woman eats apple
+He eats the red apple
