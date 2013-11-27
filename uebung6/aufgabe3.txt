@@ -71,3 +71,55 @@ P0 -> 'into'
 ('dog', 'shed')
 ('shed', 'shed')
 (,)
+
+############### eingereichte lösung: ###############
+
+S -> NP VP
+NP -> Det N0
+NP -> Det A0 N0
+VP -> V1
+VP -> V1 PP
+V1 -> Finite-Verb
+V1 -> Finite-Verb NP
+PP -> P0 NP
+
+Det -> 'the'
+A0 -> 'black'
+N0 -> 'cat' | 'dog' | 'shed'
+Finite-Verb -> 'chases'
+P0 -> 'into'
+
+# 'The black cat chases the dog into the shed'
+
+[(S, 1)]
+[(NP VP, 1)]
+[(Det N0 VP, 1), (Det A0 N0 VP, 1)]
+[(N0 VP, 2), (Det A0 N0 VP, 1)]
+[(Det A0 N0 VP, 1)]
+[(A0 N0 VP, 2)]
+[(N0 VP, 3)]
+[(VP, 4)]
+[(V1, 4), (V1 PP, 4)]
+[(Finite-Verb, 4), (Finite-Verb NP, 4), (V1 PP, 4)]
+[(, 5), (Finite-Verb NP, 4), (V1 PP, 4)]
+[(Finite-Verb NP, 4), (V1 PP, 4)]
+[(NP, 5), (V1 PP, 4)]
+[(Det N0, 5), (Det A0 N0, 5), (V1 PP, 4)]
+[(N0, 6), (Det A0 N0, 5), (V1 PP, 4)]
+[(, 7), (Det A0 N0, 5), (V1 PP, 4)]
+[(Det A0 N0, 5), (V1 PP, 4)]
+[(A0 N0, 6), (V1 PP, 4)]
+[(V1 PP, 4)]
+[(Finite-Verb PP, 4), (Finite-Verb NP PP, 4)]
+[(PP, 5), (Finite-Verb NP PP, 4)]
+[(P0 NP, 5), (Finite-Verb NP PP, 4)]
+[(Finite-Verb NP PP, 4)]
+[(NP PP, 5)]
+[(Det N0 PP, 5), (Det A0 N0 PP, 5)]
+[(N0 PP, 6), (Det A0 N0 PP, 5)]
+[(PP, 7), (Det A0 N0 PP, 5)]
+[(P0 NP, 7), (Det A0 N0 PP, 5)]
+[(NP, 8), (Det A0 N0 PP, 5)]
+[(Det N0, 8), (Det A0 N0, 8), (Det A0 N0 PP, 5)]
+[(N0, 9), (Det A0 N0, 8), (Det A0 N0 PP, 5)]
+[(, 10), (Det A0 N0, 8), (Det A0 N0 PP, 5)] # succeed
