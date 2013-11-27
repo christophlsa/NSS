@@ -1,0 +1,73 @@
+S -> NP VP
+NP -> Det N0
+NP -> Det A0 N0
+VP -> V1
+VP -> V1 PP
+V1 -> Finite-Verb
+V1 -> Finite-Verb NP
+PP -> P0 NP
+
+Det -> 'the'
+A0 -> 'black'
+N0 -> 'cat' | 'dog' | 'shed'
+Finite-Verb -> 'chases'
+P0 -> 'into'
+
+(S, 'The black cat chases the dog into the shed')
+(NP VP, 'The black cat chases the dog into the shed')
+(Det N0 VP, 'The black cat chases the dog into the shed')
+('the' N0 VP, 'The black cat chases the dog into the shed')
+(N0 VP, 'black cat chases the dog into the shed')
+(N0 VP, 'black cat chases the dog into the shed')
+('cat' VP, 'black cat chases the dog into the shed')
+('dog' VP, 'black cat chases the dog into the shed')
+('shed' VP, 'black cat chases the dog into the shed')
+(Det A0 N0 VP, 'The black cat chases the dog into the shed')
+('the' A0 N0 VP, 'The black cat chases the dog into the shed')
+(A0 N0 VP, 'black cat chases the dog into the shed')
+('black' N0 VP, 'black cat chases the dog into the shed')
+(N0 VP, 'cat chases the dog into the shed')
+('cat' VP, 'cat chases the dog into the shed')
+(VP, 'chases the dog into the shed')
+(V1, 'chases the dog into the shed')
+(Finite-Verb, 'chases the dog into the shed')
+('chases', 'chases the dog into the shed')
+(, 'the dog into the shed')
+(Finite-Verb NP, 'chases the dog into the shed')
+('chases' NP, 'chases the dog into the shed')
+(NP, 'the dog into the shed')
+(Det N0, 'the dog into the shed')
+('the' N0, 'the dog into the shed')
+(N0, 'dog into the shed')
+('cat', 'dog into the shed')
+('dog', 'dog into the shed')
+(, 'into the shed')
+(Det A0 N0, 'the dog into the shed')
+('the' A0 N0, 'the dog into the shed')
+(A0 N0, 'dog into the shed')
+('black' N0, 'dog into the shed')
+(V1 PP, 'chases the dog into the shed')
+(Finite-Verb PP, 'chases the dog into the shed')
+('chases' PP, 'chases the dog into the shed')
+(PP, 'the dog into the shed')
+(P0 NP, 'the dog into the shed')
+('into' NP, 'the dog into the shed')
+(Finite-Verb NP PP, 'chases the dog into the shed')
+('chases' NP PP, 'chases the dog into the shed')
+(NP PP, 'the dog into the shed')
+(Det N0 PP, 'the dog into the shed')
+('the' N0 PP, 'the dog into the shed')
+(N0 PP, 'dog into the shed')
+('cat' PP, 'dog into the shed')
+('dog' PP, 'dog into the shed')
+(PP, 'into the shed')
+(P0 NP, 'into the shed')
+('into' NP, 'into the shed')
+(NP, 'the shed')
+(Det N0, 'the shed')
+('the' N0, 'the shed')
+(N0, 'shed')
+('cat', 'shed')
+('dog', 'shed')
+('shed', 'shed')
+(,)

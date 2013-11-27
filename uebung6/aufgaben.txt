@@ -1,0 +1,91 @@
+= Aufgabenblatt 6 =
+
+== Aufgabe 6.1 - telescope grammar ==
+
+# Definieren Sie mit NLTK eine kontextfreie Grammatik, mit deren Hilfe der Satz "I saw the man on the hill with a telescope" geparst werden kann (siehe Grammatiken und Parsing in NLTK).
+
+# Parsen Sie den gegebenen Satz unter Verwendung Ihrer Grammatik und vergleichen Sie die Ableitungsbäume, indem Sie für jeden Baum eine geeignete deutsche Paraphrase angeben, die der jeweiligen Interpretation des Satzes entspricht.
+
+Hinweis: Sie können Begriffe wie 'Teleskopberg' (= Berg auf dem sich ein Teleskop befindet) verwenden, um Ihre Formulierungen kürzer und verständlicher zu gestalten, sofern Sie die Bedeutung dieser Begriffe angeben.
+
+
+== Aufgabe 6.2 - bottom-up ==
+
+Given is the following grammar:
+
+    S -> NP VP
+    NP -> Det N0
+    NP -> Det A0 N0
+    VP -> V1
+    VP -> V1 PP
+    V1 -> Finite-Verb
+    V1 -> Finite-Verb NP
+    PP -> P0 NP
+
+and the sentence:
+
+    The black cat chases the dog into the shed.
+
+# Add the lexical rules for the grammars.
+# Illustrate the working of the bottom-up parsing strategy (cf. Grammatiken und Parsing (slides 11, 12)) by presenting the rewriting steps of a successful parse using the above example.
+
+
+== Aufgabe 6.3 - top-down ==
+
+Given is the following grammar:
+
+    S -> NP VP
+    NP -> Det N0
+    NP -> Det A0 N0
+    VP -> V1
+    VP -> V1 PP
+    V1 -> Finite-Verb
+    V1 -> Finite-Verb NP
+    PP -> P0 NP
+
+and the sentence:
+
+    The black cat chases the dog into the shed.
+
+# Add the lexical rules for the grammars.
+# Illustrate the working of the top-down parsing algorithm (cf. Grammatiken und Parsing (slides 17ff.)) using the above example. Show the analysis trace as a table (analysis steps and backup states while handling the possibility list as a queue) as well as the search tree.
+
+
+== Aufgabe 6.4 - recursive grammar ==
+
+Write a CFG that can generate the sentence
+
+    I thought Andre said the Jamaica Observer reported that Usain Bolt broke the 100m record
+
+and similar ones. Test parsing the sentence using NLTK.
+
+
+== Aufgabe 6.5 - ambiguous sentence ==
+
+Modify the grammar
+
+    S -> NP VP
+    PP -> P NP
+    NP -> Det N | Det N PP | 'I'
+    VP -> V NP | VP PP
+    Det -> 'an' | 'my'
+    N -> 'elephant' | 'pajamas'
+    V -> 'shot'
+    P -> 'in'
+
+(cf. lecture Grammatiken und Parsing in NLTK (slide 6)) to parse the sentence
+
+    I saw John shooting an elephant in my pajamas in a cage.
+
+How many interpretations and how many parsing trees are possible?
+
+
+== Masteraufgabe 3 - Tagger Mehrdeutig ==
+
+Verwenden Sie in dieser Aufgabe Wörter aus der News-Kategorie des Brown-Korpus.
+
+# Bilden Sie einen möglichst langen sinnvollen englischen Satz (alternativ: einen sinnvollen Text aus mehreren Sätzen), der (möglichst) nur aus Wörtern besteht, die im Brown-Korpus jeweils mit mindestens zwei unterschiedlichen Tags auftreten.
+
+# An welchen Stellen ist es besonders schwierig, nur mehrdeutige Wortformen zu verwenden?
+
+# Wenden Sie auf Ihren Satz bzw. Text einen Tagger an und analysieren Sie das Ergebnis.
