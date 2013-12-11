@@ -1,0 +1,17 @@
+a)
+[A=?x]
+[A='a']
+
+b)
+- nehme die erste Feature Struktur als Basis (Arbeitsstruktur)
+- (a) gehe die Regeln (rekursiv) der zweiten Feature Struktur durch:
+-- wenn das Symbol der linken Seite in der Arbeitsstruktur als Regel nicht vorhanden ist:
+--- füge die Regel zur Arbeitsstruktur hinzu
+-- sonst:
+--- führe (a) mit den untergeordneten Regeln aus
+--- gehe die Features der Regel durch:
+---- wenn das Feature bereits in der Arbeitsstruktur vorhanden ist:
+----- wenn das Feature das Feature in der Arbeitsstruktur spezifiziert:
+------ ersetze die Variable überall entsprechend
+---- sonst:
+----- füge Feature der Regel hinzu
