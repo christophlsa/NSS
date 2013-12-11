@@ -1,0 +1,55 @@
+fs1  = nltk.FeatStruct("[A = ?x, B= [C = ?x]]")
+fs2  = nltk.FeatStruct("[B = [D = d]]")
+fs1fs2  = nltk.FeatStruct("[A = ?x, B= [C = ?x, D = d]]")
+
+In : fs1.unify(fs2)
+Out: [A=?x, B=[C=?x, D='d']]
+
+
+fs1  = nltk.FeatStruct("[A = ?x, B= [C = ?x]]")
+fs3  = nltk.FeatStruct("[B = [C = d]]")
+fs1fs3  = nltk.FeatStruct("[A = d, B= [C = d]]")
+
+In : fs1.unify(fs3)
+Out: [A='d', B=[C='d']]
+
+
+fs4  = nltk.FeatStruct("[A = (1)[B = b], C->(1)]")
+fs5  = nltk.FeatStruct("[A = (1)[D = ?x], C = [E -> [D = ?x], F = ?x] ]")
+fs4fs5  = nltk.FeatStruct("[A = (1)[B = b, D = ?x, E -> [D = ?x], F = ?x], C->(1)]")
+
+In : fs4.unify(fs5)
+Out: [A=(1)[B='b', D=?x, E->(1), F=?x], C->(1)]
+
+
+fs5  = nltk.FeatStruct("[A = (1)[D = ?x], C = [E -> (1), F = ?x] ]")
+fs6  = nltk.FeatStruct("[A = [D = d]]")
+fs5fs6 = nltk.FeatStruct("[A = (1)[D = d], C = [E -> (1), F = d] ]")
+
+In : fs5.unify(fs6)
+Out: [A=(1)[D='d'], C=[E->(1), F='d']]
+
+
+fs5  = nltk.FeatStruct("[A = (1)[D = ?x], C = [E -> (1), F = ?x] ]")
+fs7  = nltk.FeatStruct("[A = [D = d], C = [F = [D = d]]]")
+
+-> geht nicht
+
+In : print(fs5.unify(fs7))
+None
+
+
+fs8  = nltk.FeatStruct("[A = (1)[D = ?x, G = ?x], C = [B = ?x, E -> (1)] ]")
+fs9  = nltk.FeatStruct("[A = [B = b], C = [E = [G = e]]]")
+fs8fs9 = nltk.FeatStruct("[A = (1)[B = b, D = e, G = e], C = [B = e, E -> (1)] ]")
+
+In : fs8.unify(fs9)
+Out: [A=(1)[B='b', D='e', G='e'], C=[B='e', E->(1)]]
+
+
+fs8  = nltk.FeatStruct("[A = (1)[D = ?x, G = ?x], C = [B = ?x, E -> (1)] ]")
+fs10 = nltk.FeatStruct("[A = (1)[B = b], C -> (1)]")
+fs8fs10 = nltk.FeatStruct("[A = (1)[B = b, D = b, E -> (1), G = b], C -> (1)]")
+
+In : fs8.unify(fs10)
+Out: [A=(1)[B='b', D='b', E->(1), G='b'], C->(1)]

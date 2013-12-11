@@ -1,0 +1,3 @@
+(CAT NP
+      1 (CAT ART ROOT the  AGR ?a)
+      2 (CAT N   ROOT the  AGR ?a))
