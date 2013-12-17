@@ -74,26 +74,34 @@ N[CASE=dat, GND=n, NUM=pl] -> 'Büchern'
 N[CASE=akk, GND=n, NUM=pl] -> 'Bücher'
 
 Adj[CASE=nom, NUM=sg, DET=bes] -> 'alte'
-Adj[CASE={gen,dat}, NUM=sg, DET=bes] -> 'alten'
+Adj[CASE=gen, NUM=sg, DET=bes] -> 'alten'
+Adj[CASE=dat, NUM=sg, DET=bes] -> 'alten'
 Adj[CASE=akk, GND=m, NUM=sg, DET=bes] -> 'alten'
-Adj[CASE=akk, GND={w,n}, NUM=sg, DET=bes] -> 'alten'
+Adj[CASE=akk, GND=w, NUM=sg, DET=bes] -> 'alten'
+Adj[CASE=akk, GND=n, NUM=sg, DET=bes] -> 'alten'
 Adj[NUM=pl, DET=bes] -> 'alten'
 
 Adj[CASE=nom, GND=m, NUM=sg, DET=unb] -> 'alter'
-Adj[CASE={gen,dat,akk}, GND=m, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=gen, GND=m, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=dat, GND=m, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=akk, GND=m, NUM=sg, DET=unb] -> 'alten'
 
-Adj[CASE={nom,akk}, GND=w, NUM=sg, DET=unb] -> 'alte'
-Adj[CASE={gen,dat}, GND=w, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=nom, GND=w, NUM=sg, DET=unb] -> 'alte'
+Adj[CASE=gen, GND=w, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=dat, GND=w, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=akk, GND=w, NUM=sg, DET=unb] -> 'alte'
 
-Adj[CASE={nom,akk}, GND=n, NUM=sg, DET=unb] -> 'altes'
-Adj[CASE={gen,dat}, GND=n, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=nom, GND=n, NUM=sg, DET=unb] -> 'altes'
+Adj[CASE=gen, GND=n, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=dat, GND=n, NUM=sg, DET=unb] -> 'alten'
+Adj[CASE=akk, GND=n, NUM=sg, DET=unb] -> 'altes'
 
 Adj[NUM=pl, DET=bes] -> 'alten'
 """)
 
-parser = nltk.FeatureChartParser(grammar, trace=10)
+parser = nltk.FeatureChartParser(grammar)
 
-trees = parser.nbest_parse('einer alten Kuh'.split())
+trees = parser.nbest_parse('der alten Kühe'.split())
 
 for tree in trees:
     print tree
@@ -121,4 +129,16 @@ der alten Kühe
     (Det[CASE='gen', NUM='pl'] der)
     (Adj[DET='bes', NUM='pl'] alten)
     (N[CASE='gen', GND='w', NUM='pl'] Kühe)))
+
+einer alten Kuh
+(S[]
+  (NP[CASE='gen', DET='unb', GND='w', NUM='sg']
+    (Det[CASE='gen', DET='unb', GND='w', NUM='sg'] einer)
+    (Adj[CASE='gen', DET='unb', GND='w', NUM='sg'] alten)
+    (N[GND='w', NUM='sg'] Kuh)))
+(S[]
+  (NP[CASE='dat', DET='unb', GND='w', NUM='sg']
+    (Det[CASE='dat', DET='unb', GND='w', NUM='sg'] einer)
+    (Adj[CASE='dat', DET='unb', GND='w', NUM='sg'] alten)
+    (N[GND='w', NUM='sg'] Kuh)))
 """
