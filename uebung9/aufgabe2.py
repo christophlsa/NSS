@@ -7,7 +7,7 @@ grammar = nltk.parse_fcfg(
 S -> NP[CASE=?c, GND=?g, NUM=?n, DET=?d]
 
 NP[CASE=?c, GND=?g, NUM=?n, DET=?d] -> Det[CASE=?c, GND=?g, NUM=?n, DET=?d] N[CASE=?c, GND=?g, NUM=?n]
-NP[CASE=?c, GND=?g, NUM=?n, DET=?d] -> Det[CASE=?c, GND=?g, NUM=?n, DET=?d] Adj[CASE=?c, GND=?g, NUM=pl, DET=?d] N[CASE=?c, GND=?g, NUM=?n]
+NP[CASE=?c, GND=?g, NUM=?n, DET=?d] -> Det[CASE=?c, GND=?g, NUM=?n, DET=?d] Adj[CASE=?c, GND=?g, NUM=?n, DET=?d] N[CASE=?c, GND=?g, NUM=?n]
 NP[CASE=?c, GND=?g, NUM=pl, DET=?d] -> N[CASE=?c, GND=?g, NUM=pl]
 NP[CASE=?c, GND=?g, NUM=pl, DET=?d] -> Adj[CASE=?c, GND=?g, NUM=pl, DET=?d] N[CASE=?c, GND=?g, NUM=pl]
 
@@ -91,7 +91,7 @@ Adj[CASE={gen,dat}, GND=n, NUM=sg, DET=unb] -> 'alten'
 Adj[NUM=pl, DET=bes] -> 'alten'
 """)
 
-parser = nltk.FeatureChartParser(grammar)
+parser = nltk.FeatureChartParser(grammar, trace=10)
 
 trees = parser.nbest_parse('einer alten Kuh'.split())
 
