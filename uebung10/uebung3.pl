@@ -1,9 +1,9 @@
-s --> np(subj, NUM), vp(NUM).
-np(_, NUM) --> det, adj, n(NUM).
-np(_, NUM) --> det, n(NUM).
-np(CASE, NUM) --> pro(CASE, NUM).
-vp(NUM) --> v(NUM, trans), np(obj, _).
-vp(NUM) --> v(NUM, intrans).
+s --> np(subj, NUM, PERS), vp(NUM, PERS).
+np(_, NUM, _) --> det, adj, n(NUM).
+np(_, NUM, _) --> det, n(NUM).
+np(CASE, NUM, PERS) --> pro(CASE, NUM, PERS).
+vp(NUM, PERS) --> v(NUM, PERS, trans), np(obj, _, _).
+vp(NUM, PERS) --> v(NUM, PERS, intrans).
 
 det --> [the].
 
@@ -15,20 +15,19 @@ n(pl) --> [cats].
 adj --> [old].
 adj --> [black].
 
-v(sg, trans) --> [sees].
-v(pl, trans) --> [see].
-v(sg, intrans) --> [goes].
-v(pl, intrans) --> [go].
+v(_, _, trans) --> [see].
+v(sg, 3, trans) --> [sees].
+v(_, _, intrans) --> [go].
+v(sg, 3, intrans) --> [goes].
 
-pro(subj, pl) --> [i].
-pro(obj, pl) --> [me].
-pro(_, pl) --> [you].
-pro(obj, pl) --> [me].
-pro(subj,sg) --> [he].
-pro(subj,sg) --> [she].
-pro(obj,sg) --> [him].
-pro(obj,sg) --> [her].
-pro(subj,pl) --> [they].
-pro(obj,pl) --> [them].
-pro(subj,pl) --> [we].
-pro(obj,pl) --> [us].
+pro(subj, sg, 1) --> [i].
+pro(obj, sg, 1) --> [me].
+pro(_, _, 2) --> [you].
+pro(subj, sg, 3) --> [he].
+pro(subj, sg, 3) --> [she].
+pro(obj, sg, 3) --> [him].
+pro(obj, sg, 3) --> [her].
+pro(subj, pl, 1) --> [we].
+pro(obj, pl, 1) --> [us].
+pro(subj, pl, 3) --> [they].
+pro(obj, pl, 3) --> [them].
