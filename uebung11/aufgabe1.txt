@@ -1,0 +1,86 @@
+== house ==
+
+=== S; (noun) house (a dwelling that serves as living quarters for one or more families)
+    "he has a house on Cape Cod"; "she felt she had to get out of the house" ===
+
+hyponyms:
+residence, boarding_house, country_house, saltbox, lodge, detached_house,
+farmhouse, chapterhouse, duplex_house, ranch_house, bungalow, beach_house,
+sod_house, chalet, maisonette, solar_house, safe_house, gatehouse, dollhouse,
+mansion, row_house, cabin, lodging_house, villa, guesthouse, hacienda, tract_house
+
+hypernyms:
+* building -> structure -> artifact -> whole -> object -> physical_entity -> entity
+* dwelling -> housing -> structure -> ...
+
+=== S; (noun) firm, house, business firm (the members of a business organization that owns or operates one or more establishments)
+    "he worked for a brokerage house" ===
+
+hyponyms:
+dealer, corporation, consulting_firm, accounting_firm, publisher, law_firm, auction_house
+
+hypernyms:
+* business -> enterprise -> organization -> social_group-> group -> abstraction -> entity
+
+=== S; (noun) house (the members of a religious community living together) ===
+
+hyponyms: -
+
+hypernyms:
+* community -> gathering -> social_group -> group -> abstraction -> entity
+
+
+== fork ==
+
+=== S; (noun) fork (cutlery used for serving and eating food) ===
+
+hyponyms:
+toasting_fork, carving_fork, tablefork, salad_fork
+
+hypernyms:
+* cutlery -> tableware -> ware -> article -> artifact -> whole -> object -> physical_entity -> entity
+
+
+=== S; (noun) branching, ramification, fork, forking (the act of branching out or dividing into branches) ===
+
+hyponyms:
+fibrillation, bifurcation, divarication, trifurcation
+
+hypernyms:
+* division -> separation -> change_of_integrity -> change -> action -> act -> event -> psychological_feature -> abstraction -> entity
+
+=== S; (noun) fork, crotch (the region of the angle formed by the junction of two branches)
+    "they took the south fork"; "he climbed into the crotch of a tree" ===
+
+hyponyms: -
+
+hypernyms:
+* branch -> subfigure -> figure -> shape -> attribute -> abstraction -> entity
+
+
+== virus ==
+
+=== S; (noun) virus ((virology) ultramicroscopic infectious agent that replicates itself only within cells of living hosts; many are pathogenic; a piece of nucleic acid (DNA or RNA) wrapped in a thin coat of protein) ===
+
+hyponyms:
+arbovirus, slow_virus, tumor_virus, animal_virus, vector, plant_virus, bacteriophage
+
+hypernyms:
+* microorganism -> organism -> living_thing -> whole -> object -> physical_entity -> entity
+* infectious_agent -> agent -> causal_agent -> physical_entity -> entity
+
+=== S; (noun) virus (a harmful or corrupting agency)
+    "bigotry is a virus that must not be allowed to spread"; "the virus of jealousy is latent in everyone" ===
+
+hyponyms: -
+
+hypernyms:
+* representation -> state -> attribute -> abstraction -> entity
+
+=== S; (noun) virus, computer virus (a software program capable of reproducing itself and usually capable of causing great harm to files or other programs on the same computer)
+    "a true virus cannot spread to another computer without human assistance" ===
+
+hyponyms: -
+
+hypernyms:
+* malevolent_program -> program -> software -> code -> coding_system ->  writing -> written_communication -> communication -> abstraction -> entity
