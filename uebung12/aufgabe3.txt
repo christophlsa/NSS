@@ -1,0 +1,8 @@
+A:  exists y.(person(y) & all x.(person(x) -> see(x,y)))
+A: Es existiert eine Person, die von allen Personen gesehen wird.
+
+B:  all x.(person(x) -> exists y.(person(y) & see(x,y)))
+B: Jede Person sieht mindestens eine Person.
+
+C:  all x.(person(x) -> exists y.(person(y) & see(y,x)))
+C: Jede Person wird von mindestens einer Person gesehen.
